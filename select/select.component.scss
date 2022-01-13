@@ -1,0 +1,84 @@
+.ng-select {
+    width: 323px;
+    border: 1px solid rgba(163, 177, 196, .24);
+    border-radius: 8px;
+}
+
+section {
+    position: relative;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #6d788a;
+    margin-bottom: 20px;
+    line-height: 35px;
+}
+
+.city {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.time {
+    font-size: 15px;
+}
+
+.city-title {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.fact-weather {
+    width: 300px;
+    height: 260px;
+    background: linear-gradient( 323.38deg, #f3f7fa 9.36%, #fff 88.73%);
+    border: 1px solid rgba(163, 177, 196, .24);
+    border-radius: 8px;
+    display: flexbox;
+    padding: 10px;
+}
+
+.param-temp {
+    font-size: 35px;
+    color: #2c323d;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.city_list {
+    display: flex;
+    flex-direction: column;
+    line-height: 0px;
+}
+
+.info {
+    font-size: 18px;
+}
+
+.direct {
+    margin-left: 21px;
+}
+
+button {
+    height: 30px;
+    width: 150px;
+    font-family: Montserrat;
+    font-size: 15px;
+    background: linear-gradient( 323.38deg, #f3f7fa 9.36%, #fff 88.73%);
+    border: 1px solid #2c323d;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+
+.icon {
+    position: absolute;
+    top: 190px;
+    left: 210px;
+}

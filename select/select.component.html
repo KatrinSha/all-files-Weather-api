@@ -1,0 +1,31 @@
+<section>
+    <div class="fact-weather">
+        <div class="title">Actual weather</div>
+        <div class="city">
+            <span class="city-title"> {{weatherData.forCity}}</span>
+            <span class="time">{{Data|date}}</span>
+        </div>
+        <div class="param-temp"> {{weatherData.temperatureCelsius}} °C</div>
+        <div class="info">
+            <div class="press">
+                <span class="press-title">Atmospheric pressure</span>
+                <span class="press-param"> {{weatherData.atmosphericPressurehPa}} hPa</span>
+            </div>
+            <div class="param">Humidity: {{weatherData.humidity}} %</div>
+            <div class="wind"><span>Wind</span>
+                <span class="speed"> speed:  {{weatherData.windSpeed}} m/s</span>
+                <div class="direct"> direction: {{weatherData.windDirection | wind}} </div>
+            </div>
+            <div class="icon">
+                <img class="images" src={{myImage}}{{weatherData.weatherIcon}}.png width="80" />
+            </div>
+        </div>
+    </div>
+</section>
+<ng-select [items]="country" placeholder="Select country" [searchable]="true" [clearable]="true" [(ngModel)]="selectedCountry" (change)='weatherCountry($event)' [loading]="isLoadingCountry">
+</ng-select>
+<ng-select [items]="state" placeholder="Select state" [searchable]="true" [clearable]="true" [(ngModel)]="selectedState" (change)='weatherState($event)'>
+</ng-select>
+<ng-select [items]="city" placeholder="Select city" [searchable]="true" [clearable]="true" [(ngModel)]="selectedCity" (change)='weatherCity($event)'>
+</ng-select>
+<button routerLink="">Back to list</button>
